@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 2px solid red;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    background-color: var(--light-gray);
+    max-height: 100vh;
+}
+p {
+    text-align: center;
+}
+
+/* QR Code Card Styles */
+.card-container {
+    max-width: 280px;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+.qr-card {
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 5px 18px rgb(128, 128, 128, 0.3);
+}
+.card-img {
+    width: 100%;
+    margin-bottom: .5rem;
+}
+.card-img img {
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+.card-heading {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+    padding: .5rem 0;
+    margin-bottom: .5rem;
+    width: 100%;
+}
+.card-info {
+    font-size: .9rem;
+    font-weight: 400;
+    color: var(--grayish-blue);
+    margin-bottom: 1.3rem;
+}
+
+/* Footer Section Styles */
+.attribution {
+    margin-top: 12rem;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Mobile Screen Layout */
+@media only screen and (max-width: 375px) {
+    .card-container {
+        max-width: 250px;
+    }
+    .card-heading {
+        font-size: 1.2rem;
+    }
+    .card-info {
+        font-size: .8rem;
+    }
+    .attribution {
+        margin-top: 10rem;
+        font-size: 10px;
+    }
+}
